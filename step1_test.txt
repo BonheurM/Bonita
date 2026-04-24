@@ -1,0 +1,3 @@
+PRINT hello
+SET x 10
+ADD x 5 result
