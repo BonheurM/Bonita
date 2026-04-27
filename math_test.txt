@@ -1,0 +1,8 @@
+SET a 7
+SET b 3
+ADD a b sum
+SUB a b difference
+MUL a b product
+PRINT sum
+PRINT difference
+PRINT product
