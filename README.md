@@ -1,4 +1,4 @@
-Programming Languages Final Project
+## Bonita Programming Language
 
 This project is a very simple interpreted language written in Python.
 The goal of the project is to design a small custom language and build
