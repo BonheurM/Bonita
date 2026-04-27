@@ -199,12 +199,9 @@ def execute_simple_command(line, variables):
             print("Error: LEN needs text result.")
             return
 
-        text = get_value(tokens[1], variables)
+        # Convert values to text so inputs like 4 can be processed as strings.
+        text = str(get_value(tokens[1], variables))
         result_name = tokens[2]
-
-        if not isinstance(text, str):
-            print("Error: LEN only works with strings.")
-            return
 
         variables[result_name] = len(text)
 
@@ -213,13 +210,10 @@ def execute_simple_command(line, variables):
             print("Error: CHAR needs text index result.")
             return
 
-        text = get_value(tokens[1], variables)
+        # Convert values to text so numeric input can still be used as text.
+        text = str(get_value(tokens[1], variables))
         index = get_value(tokens[2], variables)
         result_name = tokens[3]
-
-        if not isinstance(text, str):
-            print("Error: CHAR only works with strings.")
-            return
 
         if not isinstance(index, int):
             print("Error: CHAR index must be an integer.")

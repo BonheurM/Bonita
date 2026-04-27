@@ -1,4 +1,5 @@
 INPUT text
+CONCAT text "" text
 LEN text length
 SET index 0
 SET reversed ""
