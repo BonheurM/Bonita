@@ -1,0 +1,4 @@
+INPUT x
+INPUT y
+MUL x y result
+PRINT result
