@@ -1,0 +1,15 @@
+INPUT text
+LEN text length
+SET index 0
+SET reversed ""
+WHILE index < length
+CHAR text index letter
+CONCAT letter reversed reversed
+ADD index 1 index
+END
+IF text == reversed
+PRINT yes
+END
+IF text != reversed
+PRINT no
+END

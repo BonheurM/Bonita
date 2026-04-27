@@ -1,5 +1,0 @@
-PRINT hello
-SET x 10
-PRINT x
-ADD x 5 result
-PRINT result

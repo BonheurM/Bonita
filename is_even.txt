@@ -1,0 +1,8 @@
+INPUT number
+MOD number 2 remainder
+IF remainder == 0
+PRINT even
+END
+IF remainder != 0
+PRINT odd
+END

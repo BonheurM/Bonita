@@ -1,0 +1,8 @@
+INPUT character
+INPUT count
+SET output ""
+WHILE count > 0
+CONCAT output character output
+SUB count 1 count
+END
+PRINT output
