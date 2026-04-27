@@ -1,4 +1,4 @@
-Programming Languages Final Project
+# Bonita Programming Language
 
 This project is a very simple interpreted language written in Python.
 The goal of the project is to design a small custom language and build
@@ -10,7 +10,7 @@ advanced parsing libraries. Instead, it reads the program line by line,
 splits each line into tokens, and decides what to do based on the first
 word of the line.
 
-Language Features
+## Language Features
 
 The language supports:
 
@@ -26,7 +26,7 @@ The language supports:
 Variables are stored in a Python dictionary. This makes it easy to save
 and update values while the program is running.
 
-Keywords and Operators
+## Keywords and Operators
 
 The language includes more than 8 keywords/operators.
 
@@ -55,7 +55,7 @@ Operators:
 - `<=`
 - `>=`
 
-What Each Command Does
+## What Each Command Does
 
 `PRINT value`
 Prints a value to the screen.
@@ -96,7 +96,7 @@ Repeats the lines inside the block while the condition stays true.
 `END`
 Marks the end of an `IF` block or `WHILE` block.
 
-How the Interpreter Works
+## How the Interpreter Works
 
 The interpreter follows a simple process:
 
@@ -108,7 +108,7 @@ The interpreter follows a simple process:
 6. Execute the command.
 7. Store and update variables in a dictionary.
 
-Main Functions Used in `interpreter.py`
+## Main Functions Used in `interpreter.py`
 
 `get_value(token, variables)`
 This function converts a token into its real value. If the token is a
@@ -149,7 +149,7 @@ starts execution.
 This function reads the filename from the command line and starts the
 interpreter.
 
-Example Commands
+## Example Commands
 
 Example 1:
 
@@ -214,7 +214,7 @@ Output:
 o
 ```
 
-Required Program Files
+## Required Program Files
 
 `helloworld.txt`
 Prints `hello`.
@@ -240,7 +240,7 @@ prints `no`.
 Takes an integer and prints `even` if the number is divisible by 2,
 otherwise prints `odd`.
 
-How to Run the Interpreter
+## How to Run the Interpreter
 
 From the project folder, use:
 
@@ -254,7 +254,7 @@ python3 interpreter.py is_palindrome.txt
 python3 interpreter.py is_even.txt
 ```
 
-Sample Test Inputs
+## Sample Test Inputs
 
 For `cat.txt`, type:
 
@@ -294,7 +294,7 @@ For `is_even.txt`, type:
 8
 ```
 
-Error Handling
+## Error Handling
 
 The interpreter includes simple error handling so the program does not
 crash easily. It checks for:
@@ -307,7 +307,7 @@ crash easily. It checks for:
 - invalid string indexes in `CHAR`
 - missing `END` in `IF` or `WHILE` blocks
 
-Summary
+## Summary
 
 This project demonstrates the basic ideas behind programming language
 design and interpreter implementation. The language is small, easy to
